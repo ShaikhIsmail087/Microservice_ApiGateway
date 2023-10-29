@@ -30,3 +30,13 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+#okta configuration for api gateway
+
+okta:
+  oauth2:
+    issuer: https://dev-95006329.okta.com/oauth2/default
+    audience: api://default
+    client-id: 0oacxt0sfpvrjCNN25d7
+    client-secret: hs4YSnX3QdAyrYRt1ESzbUm_SeiUGPqQSOd9S2SBkF5CBJLz4EXCO97uTVbItKOU
+    scopes: openid, profile, email, offline_access
